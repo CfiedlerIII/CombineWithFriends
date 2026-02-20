@@ -1,0 +1,89 @@
+
+{
+    "$schema": "./node_modules/json-server/schema.json",
+    "users": [
+        {
+            "firstName": "David",
+            "lastName": "Betterhorn",
+            "username": "dbetterhorn",
+            "password": "pass1234",
+            "id":"1"
+        },
+        {
+            "firstName": "Juliette",
+            "lastName": "Betterhorn",
+            "username": "jbetterhorn",
+            "password": "pass1234",
+            "id":"2"
+        },
+        {
+            "firstName": "Sara",
+            "lastName": "Withanaech",
+            "username": "swithanaech",
+            "password": "pass1234",
+            "id":"3"
+        },
+        {
+            "firstName": "Charles",
+            "lastName": "Fielder",
+            "username": "cfielder",
+            "password": "pass1234",
+            "id":"4"
+        },
+        {
+            "firstName": "Mason",
+            "lastName": "Downbad",
+            "username": "mdownbad",
+            "password": "pass1234",
+            "id":"5"
+        },
+        {
+            "firstName": "Corey",
+            "lastName": "En-Leuis",
+            "username": "cenleuis",
+            "password": "pass1234",
+            "id":"6"
+        },
+        {
+            "firstName": "Donny",
+            "lastName": "Thedon",
+            "username": "dthedon",
+            "password": "pass1234",
+            "id":"7"
+        }
+    ],
+    "groupComs": [
+        {
+            "id": "43",
+            "nickname": null
+        },
+        {
+            "id": "12",
+            "name": "Better Family"
+        },
+        {
+            "id": "564",
+            "name": "The Boys"
+        }
+    ],
+    "messages": [
+        {
+            "id": "1",
+            "groupComId": "564",
+            "senderId": "4",
+            "data": "Hello there..."
+        },
+        {
+            "id": "2",
+            "groupComId": "564",
+            "senderId": "6",
+            "data": "and I'm so sorry"
+        },
+        {
+            "id": "3",
+            "groupComId": "56",
+            "senderId": "6",
+            "data": "I cannot sleep. I cannot dream tonight."
+        }
+    ]
+}

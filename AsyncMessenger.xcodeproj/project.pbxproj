@@ -33,6 +33,8 @@
 		1DB8A0382F4007A900F13933 /* Exceptions for "AsyncMessenger" folder in "AsyncMessengerTests" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				AlertMessage/AlertMessage.swift,
+				APIServices/APIService.swift,
 				Helpers/LoadableView.swift,
 				Helpers/ServerService.swift,
 				MainTabView.swift,
@@ -42,6 +44,7 @@
 				NewUser/NewUserView.swift,
 				UsersView/UserDetails/UserDetailsView.swift,
 				UsersView/UsersService.swift,
+				UsersView/UsersView.swift,
 				UsersView/UsersViewModel.swift,
 			);
 			target = 1DB8A0162F40077C00F13933 /* AsyncMessengerTests */;
@@ -49,6 +52,7 @@
 		1DB8A0392F4007A900F13933 /* Exceptions for "AsyncMessenger" folder in "AsyncMessengerUITests" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				APIServices/APIService.swift,
 				Helpers/LoadableView.swift,
 				Helpers/ServerService.swift,
 				MainTabView.swift,
