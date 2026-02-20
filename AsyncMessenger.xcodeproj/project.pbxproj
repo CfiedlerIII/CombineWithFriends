@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		1DB8A0182F40077C00F13933 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1DB8A0022F40077A00F13933 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1DB8A0092F40077A00F13933;
+			remoteInfo = AsyncMessenger;
+		};
+		1DB8A0222F40077C00F13933 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1DB8A0022F40077A00F13933 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1DB8A0092F40077A00F13933;
+			remoteInfo = AsyncMessenger;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1DB8A00A2F40077A00F13933 /* AsyncMessenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AsyncMessenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DB8A0172F40077C00F13933 /* AsyncMessengerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AsyncMessengerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DB8A0212F40077C00F13933 /* AsyncMessengerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AsyncMessengerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		1DB8A0382F4007A900F13933 /* Exceptions for "AsyncMessenger" folder in "AsyncMessengerTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Helpers/LoadableView.swift,
+				Helpers/ServerService.swift,
+				MainTabView.swift,
+				Messenger/MessagesService.swift,
+				Messenger/MessengerView.swift,
+				Messenger/MessengerViewModel.swift,
+				NewUser/NewUserView.swift,
+				UsersView/UserDetails/UserDetailsView.swift,
+				UsersView/UsersService.swift,
+				UsersView/UsersViewModel.swift,
+			);
+			target = 1DB8A0162F40077C00F13933 /* AsyncMessengerTests */;
+		};
+		1DB8A0392F4007A900F13933 /* Exceptions for "AsyncMessenger" folder in "AsyncMessengerUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Helpers/LoadableView.swift,
+				Helpers/ServerService.swift,
+				MainTabView.swift,
+				Messenger/MessagesService.swift,
+				Messenger/MessengerView.swift,
+				Messenger/MessengerViewModel.swift,
+				NewUser/NewUserView.swift,
+				UsersView/UserDetails/UserDetailsView.swift,
+				UsersView/UsersService.swift,
+				UsersView/UsersViewModel.swift,
+			);
+			target = 1DB8A0202F40077C00F13933 /* AsyncMessengerUITests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		1DB8A00C2F40077A00F13933 /* AsyncMessenger */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				1DB8A0382F4007A900F13933 /* Exceptions for "AsyncMessenger" folder in "AsyncMessengerTests" target */,
+				1DB8A0392F4007A900F13933 /* Exceptions for "AsyncMessenger" folder in "AsyncMessengerUITests" target */,
+			);
+			path = AsyncMessenger;
+			sourceTree = "<group>";
+		};
+		1DB8A01A2F40077C00F13933 /* AsyncMessengerTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = AsyncMessengerTests;
+			sourceTree = "<group>";
+		};
+		1DB8A0242F40077C00F13933 /* AsyncMessengerUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = AsyncMessengerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1DB8A0072F40077A00F13933 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DB8A0142F40077C00F13933 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DB8A01E2F40077C00F13933 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1DB8A0012F40077A00F13933 = {
+			isa = PBXGroup;
+			children = (
+				1DB8A00C2F40077A00F13933 /* AsyncMessenger */,
+				1DB8A01A2F40077C00F13933 /* AsyncMessengerTests */,
+				1DB8A0242F40077C00F13933 /* AsyncMessengerUITests */,
+				1DB8A00B2F40077A00F13933 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1DB8A00B2F40077A00F13933 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1DB8A00A2F40077A00F13933 /* AsyncMessenger.app */,
+				1DB8A0172F40077C00F13933 /* AsyncMessengerTests.xctest */,
+				1DB8A0212F40077C00F13933 /* AsyncMessengerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1DB8A0092F40077A00F13933 /* AsyncMessenger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DB8A02B2F40077C00F13933 /* Build configuration list for PBXNativeTarget "AsyncMessenger" */;
+			buildPhases = (
+				1DB8A0062F40077A00F13933 /* Sources */,
+				1DB8A0072F40077A00F13933 /* Frameworks */,
+				1DB8A0082F40077A00F13933 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				1DB8A00C2F40077A00F13933 /* AsyncMessenger */,
+			);
+			name = AsyncMessenger;
+			packageProductDependencies = (
+			);
+			productName = AsyncMessenger;
+			productReference = 1DB8A00A2F40077A00F13933 /* AsyncMessenger.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1DB8A0162F40077C00F13933 /* AsyncMessengerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DB8A02E2F40077C00F13933 /* Build configuration list for PBXNativeTarget "AsyncMessengerTests" */;
+			buildPhases = (
+				1DB8A0132F40077C00F13933 /* Sources */,
+				1DB8A0142F40077C00F13933 /* Frameworks */,
+				1DB8A0152F40077C00F13933 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1DB8A0192F40077C00F13933 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				1DB8A01A2F40077C00F13933 /* AsyncMessengerTests */,
+			);
+			name = AsyncMessengerTests;
+			packageProductDependencies = (
+			);
+			productName = AsyncMessengerTests;
+			productReference = 1DB8A0172F40077C00F13933 /* AsyncMessengerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1DB8A0202F40077C00F13933 /* AsyncMessengerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DB8A0312F40077C00F13933 /* Build configuration list for PBXNativeTarget "AsyncMessengerUITests" */;
+			buildPhases = (
+				1DB8A01D2F40077C00F13933 /* Sources */,
+				1DB8A01E2F40077C00F13933 /* Frameworks */,
+				1DB8A01F2F40077C00F13933 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1DB8A0232F40077C00F13933 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				1DB8A0242F40077C00F13933 /* AsyncMessengerUITests */,
+			);
+			name = AsyncMessengerUITests;
+			packageProductDependencies = (
+			);
+			productName = AsyncMessengerUITests;
+			productReference = 1DB8A0212F40077C00F13933 /* AsyncMessengerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1DB8A0022F40077A00F13933 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1630;
+				LastUpgradeCheck = 1630;
+				TargetAttributes = {
+					1DB8A0092F40077A00F13933 = {
+						CreatedOnToolsVersion = 16.3;
+					};
+					1DB8A0162F40077C00F13933 = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = 1DB8A0092F40077A00F13933;
+					};
+					1DB8A0202F40077C00F13933 = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = 1DB8A0092F40077A00F13933;
+					};
+				};
+			};
+			buildConfigurationList = 1DB8A0052F40077A00F13933 /* Build configuration list for PBXProject "AsyncMessenger" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1DB8A0012F40077A00F13933;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 1DB8A00B2F40077A00F13933 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1DB8A0092F40077A00F13933 /* AsyncMessenger */,
+				1DB8A0162F40077C00F13933 /* AsyncMessengerTests */,
+				1DB8A0202F40077C00F13933 /* AsyncMessengerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1DB8A0082F40077A00F13933 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DB8A0152F40077C00F13933 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DB8A01F2F40077C00F13933 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1DB8A0062F40077A00F13933 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DB8A0132F40077C00F13933 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DB8A01D2F40077C00F13933 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1DB8A0192F40077C00F13933 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1DB8A0092F40077A00F13933 /* AsyncMessenger */;
+			targetProxy = 1DB8A0182F40077C00F13933 /* PBXContainerItemProxy */;
+		};
+		1DB8A0232F40077C00F13933 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1DB8A0092F40077A00F13933 /* AsyncMessenger */;
+			targetProxy = 1DB8A0222F40077C00F13933 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1DB8A0292F40077C00F13933 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = HR2X7J3B85;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1DB8A02A2F40077C00F13933 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = HR2X7J3B85;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1DB8A02C2F40077C00F13933 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HR2X7J3B85;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.mkdir.AsyncMessenger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1DB8A02D2F40077C00F13933 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HR2X7J3B85;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.mkdir.AsyncMessenger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1DB8A02F2F40077C00F13933 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HR2X7J3B85;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.mkdir.AsyncMessengerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AsyncMessenger.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AsyncMessenger";
+			};
+			name = Debug;
+		};
+		1DB8A0302F40077C00F13933 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HR2X7J3B85;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.mkdir.AsyncMessengerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AsyncMessenger.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AsyncMessenger";
+			};
+			name = Release;
+		};
+		1DB8A0322F40077C00F13933 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HR2X7J3B85;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.mkdir.AsyncMessengerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AsyncMessenger;
+			};
+			name = Debug;
+		};
+		1DB8A0332F40077C00F13933 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HR2X7J3B85;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.mkdir.AsyncMessengerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AsyncMessenger;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DB8A0052F40077A00F13933 /* Build configuration list for PBXProject "AsyncMessenger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DB8A0292F40077C00F13933 /* Debug */,
+				1DB8A02A2F40077C00F13933 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DB8A02B2F40077C00F13933 /* Build configuration list for PBXNativeTarget "AsyncMessenger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DB8A02C2F40077C00F13933 /* Debug */,
+				1DB8A02D2F40077C00F13933 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DB8A02E2F40077C00F13933 /* Build configuration list for PBXNativeTarget "AsyncMessengerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DB8A02F2F40077C00F13933 /* Debug */,
+				1DB8A0302F40077C00F13933 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DB8A0312F40077C00F13933 /* Build configuration list for PBXNativeTarget "AsyncMessengerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DB8A0322F40077C00F13933 /* Debug */,
+				1DB8A0332F40077C00F13933 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1DB8A0022F40077A00F13933 /* Project object */;
+}
