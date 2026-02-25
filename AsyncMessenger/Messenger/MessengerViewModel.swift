@@ -12,13 +12,13 @@ class MessengerViewModel: ObservableObject {
   private var cancellables = Set<AnyCancellable>()
   @AppStorage("currentUser") var currentUser: User?
   @Published var isLoading: Bool = true
-  @Published var messages: [Message] = []
+  @Published var conversations: [Conversation] = []
   @Published var alert: AlertMessage? = nil
 
-  func loadMessages() {
-    messages = []
+  func loadConversations() {
+    conversations = []
     isLoading = true
-    MessagesService.getMessages(including: currentUser?.id)
+    MessagesService.getConversations(including: currentUser?.id)
       .delay(for: 1.5, scheduler: RunLoop.main)
       .receive(on: RunLoop.main)
       .sink { [weak self] (result) in
@@ -37,9 +37,9 @@ class MessengerViewModel: ObservableObject {
           self?.isLoading = false
           return
         }
-      } receiveValue: { [weak self] (messages) in
+      } receiveValue: { [weak self] (conversations) in
         print("Setting fetched messages")
-        self?.messages = messages
+        self?.conversations = conversations
       }
       .store(in: &cancellables)
   }

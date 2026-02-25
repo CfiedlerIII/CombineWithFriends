@@ -23,4 +23,27 @@ struct APIService {
       .decode(type: T.self, decoder: JSONDecoder())
       .eraseToAnyPublisher()
   }
+
+  static func post<T: Encodable>(dataType: T, for url: URL) -> AnyPublisher<Void,Error> {
+    var request = URLRequest(url: url)
+    request.httpMethod = "POST"
+    request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+    do {
+      request.httpBody = try JSONEncoder().encode(dataType)
+    }
+    catch {
+      return Fail(error: error).eraseToAnyPublisher()
+    }
+    return URLSession.shared
+      .dataTaskPublisher(for: request)
+      .tryMap { data, response in
+        guard let httpResponse = response as? HTTPURLResponse,
+                (httpResponse.statusCode == 200 || httpResponse.statusCode == 201) else
+        {
+          throw URLError(.badServerResponse)
+        }
+        return
+      }
+      .eraseToAnyPublisher()
+  }
 }

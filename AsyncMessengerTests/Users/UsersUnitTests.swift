@@ -57,7 +57,7 @@ struct UsersUnitTests {
     #expect(userToTest!.username == "testUser")
   }
 
-  @Test func testerUserEncodeDecode() async throws {
+  @Test func testUserEncodeDecode() async throws {
     let userToTest = User(
       id: "12345",
       firstName: "Test",
@@ -70,5 +70,123 @@ struct UsersUnitTests {
     #expect(decodedUser.firstName == "Test")
     #expect(decodedUser.lastName == "User")
     #expect(decodedUser.username == "testUser")
+  }
+
+  @Test func testUsersInit() async throws {
+    let user = User(
+      id: "12345",
+      firstName: "Test",
+      lastName: "User",
+      username: "testUser"
+    )
+    let juniorUser = User(
+      id: "12346",
+      firstName: "Junior",
+      lastName: "User",
+      username: "jUser"
+    )
+    let usersToTest: [User] = [user, juniorUser]
+    #expect(usersToTest.count == 2)
+    #expect(usersToTest[0].id == "12345")
+    #expect(usersToTest[0].firstName == "Test")
+    #expect(usersToTest[0].lastName == "User")
+    #expect(usersToTest[0].username == "testUser")
+    #expect(usersToTest[1].id == "12346")
+    #expect(usersToTest[1].firstName == "Junior")
+    #expect(usersToTest[1].lastName == "User")
+    #expect(usersToTest[1].username == "jUser")
+  }
+
+  @Test func testUsersInitFromDecoder() async throws {
+    let dataString = """
+      {
+        "users": [
+          {
+            "id":"12345",
+            "firstName": "Test",
+            "lastName": "User",
+            "username": "testUser"
+          },
+          {
+            "id":"12346",
+            "firstName": "Junior",
+            "lastName": "User",
+            "username": "jUser"
+          }
+        ]
+      }
+      """
+    let userData = dataString.data(using: .utf8)!
+    let usersToTest = try JSONDecoder().decode(Users.self, from: userData)
+    #expect(usersToTest.users.count == 2)
+    #expect(usersToTest.users[0].id == "12345")
+    #expect(usersToTest.users[0].firstName == "Test")
+    #expect(usersToTest.users[0].lastName == "User")
+    #expect(usersToTest.users[0].username == "testUser")
+    #expect(usersToTest.users[1].id == "12346")
+    #expect(usersToTest.users[1].firstName == "Junior")
+    #expect(usersToTest.users[1].lastName == "User")
+    #expect(usersToTest.users[1].username == "jUser")
+  }
+
+  @Test func testUsersInitFromRawData() async throws {
+    let dataString = """
+      {
+        "users": [
+          {
+            "id":"12345",
+            "firstName": "Test",
+            "lastName": "User",
+            "username": "testUser"
+          },
+          {
+            "id":"12346",
+            "firstName": "Junior",
+            "lastName": "User",
+            "username": "jUser"
+          },
+        ]
+      }
+      """
+    guard let usersToTest = Users(rawValue: dataString) else {
+      #expect(Bool(false), "Failed to initialize Users from raw string")
+      return
+    }
+    #expect(usersToTest.users.count == 2)
+    #expect(usersToTest.users[0].id == "12345")
+    #expect(usersToTest.users[0].firstName == "Test")
+    #expect(usersToTest.users[0].lastName == "User")
+    #expect(usersToTest.users[0].username == "testUser")
+    #expect(usersToTest.users[1].id == "12346")
+    #expect(usersToTest.users[1].firstName == "Junior")
+    #expect(usersToTest.users[1].lastName == "User")
+    #expect(usersToTest.users[1].username == "jUser")
+  }
+
+  @Test func testUsersEncodeDecode() async throws {
+    let user = User(
+      id: "12345",
+      firstName: "Test",
+      lastName: "User",
+      username: "testUser"
+    )
+    let juniorUser = User(
+      id: "12346",
+      firstName: "Junior",
+      lastName: "User",
+      username: "jUser"
+    )
+    let usersToTest = Users([user, juniorUser])
+    let encodedUsers = try JSONEncoder().encode(usersToTest)
+    let decodedUsers = try JSONDecoder().decode(Users.self, from: encodedUsers)
+    #expect(decodedUsers.users.count == 2)
+    #expect(decodedUsers.users[0].id == "12345")
+    #expect(decodedUsers.users[0].firstName == "Test")
+    #expect(decodedUsers.users[0].lastName == "User")
+    #expect(decodedUsers.users[0].username == "testUser")
+    #expect(decodedUsers.users[1].id == "12346")
+    #expect(decodedUsers.users[1].firstName == "Junior")
+    #expect(decodedUsers.users[1].lastName == "User")
+    #expect(decodedUsers.users[1].username == "jUser")
   }
 }

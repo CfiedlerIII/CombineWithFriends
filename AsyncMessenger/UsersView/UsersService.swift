@@ -15,6 +15,45 @@ struct UsersService {
   }
 }
 
+class Users: Codable, RawRepresentable {
+  enum CodingKeys: String, CodingKey {
+    case users
+  }
+
+  var users: [User]
+
+  public var rawValue: String {
+    guard let data = try? JSONEncoder().encode(self.users),
+          let result = String(data: data, encoding: .utf8) else {
+      return "{}"
+    }
+    return result
+  }
+
+  public init(_ users: [User]) {
+    self.users = users
+  }
+
+  // Boilerplate: Implement RawRepresentable to convert self to String
+  required public init?(rawValue: String) {
+    guard let data = rawValue.data(using: .utf8),
+          let result = try? JSONDecoder().decode(Users.self, from: data) else {
+      return nil
+    }
+    self.users = result.users
+  }
+
+  required init(from decoder: any Decoder) throws {
+    let container = try decoder.container(keyedBy: CodingKeys.self)
+    users = try container.decode([User].self, forKey: .users)
+  }
+
+  func encode(to encoder: any Encoder) throws {
+    var container = encoder.container(keyedBy: CodingKeys.self)
+    try container.encode(users, forKey: .users)
+  }
+}
+
 class User: Codable, Identifiable, RawRepresentable {
   enum CodingKeys: String, CodingKey {
     case id

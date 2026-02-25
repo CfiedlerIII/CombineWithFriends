@@ -28,7 +28,7 @@ struct LoginView: View {
     }
     .background(.white)
     .padding()
-    .background(viewModel.hasAttemptedLogin ? (viewModel.isLoggedIn ? .mint : .red) : .white)
+    .background(viewModel.shouldShowErrorColor ? .red : .mint)
   }
 }
 

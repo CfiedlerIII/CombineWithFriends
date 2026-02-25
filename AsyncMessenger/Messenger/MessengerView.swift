@@ -13,22 +13,29 @@ struct MessengerView: View {
 
   var body: some View {
     ZStack {
-      ScrollView {
-        ForEach(viewModel.messages) { message in
-          HStack {
-            Text(message.data)
-            Spacer()
+      VStack {
+        Text("Messages")
+        NavigationStack {
+          List {
+            ForEach(viewModel.conversations) { convo in
+              NavigationLink(destination:  {
+                ConversationView(
+                  viewModel: .init(
+                    conversation: convo
+                  )
+                )
+              }) {
+                Text(convo.groupNickname ?? convo.id)
+              }
+            }
           }
+          .listStyle(.plain)
           .padding()
-          .background(.mint)
-          .clipShape(RoundedRectangle(cornerRadius: 8.0))
         }
       }
-      .listStyle(.plain)
-      .padding()
     }
     .task {
-      viewModel.loadMessages()
+      viewModel.loadConversations()
     }
     .modifier(LoadableView(isLoading: $viewModel.isLoading))
     .alert(
@@ -48,7 +55,7 @@ struct MessengerView: View {
       }
       Button("Retry") {
         viewModel.alert = nil
-        viewModel.loadMessages()
+        viewModel.loadConversations()
       }
     } message: { alert in
       Text(alert.details)

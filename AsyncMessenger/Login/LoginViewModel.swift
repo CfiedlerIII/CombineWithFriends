@@ -13,7 +13,7 @@ class LoginViewModel: ObservableObject {
   @AppStorage("currentUser") var currentUser: User? = nil
   @Published var isLoading: Bool = false
   @Published var isLoggedIn: Bool = false
-  @Published var hasAttemptedLogin: Bool = false
+  @Published var shouldShowErrorColor: Bool = false
   @Published var alert: AlertMessage? = nil
 
   func attemptLogin(username: String, password: String) {
@@ -27,7 +27,7 @@ class LoginViewModel: ObservableObject {
       switch result {
       case .failure(let error):
         print("LoginVM: Error: \(error)")
-        self?.hasAttemptedLogin = true
+        self?.shouldShowErrorColor = true
         self?.isLoggedIn = false
         self?.alert = AlertMessage(
           title: "Error",
@@ -38,7 +38,6 @@ class LoginViewModel: ObservableObject {
 
       case .finished:
         print("LoginVM: Positive login response")
-        self?.hasAttemptedLogin = true
         self?.isLoading = false
         return
       }
@@ -47,6 +46,7 @@ class LoginViewModel: ObservableObject {
       self?.isLoggedIn = loginUsers.count == 1
       print(loginUsers.count == 1 ? "LoginVM: Logging In!" : "LoginVM: Failed to log in")
       self?.currentUser = loginUsers.first
+      self?.shouldShowErrorColor = loginUsers.count != 1
     }
     .store(in: &cancellables)
   }
