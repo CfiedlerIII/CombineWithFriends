@@ -1,89 +1,145 @@
-
 {
-    "$schema": "./node_modules/json-server/schema.json",
-    "users": [
-        {
-            "firstName": "David",
-            "lastName": "Betterhorn",
-            "username": "dbetterhorn",
-            "password": "pass1234",
-            "id":"1"
-        },
-        {
-            "firstName": "Juliette",
-            "lastName": "Betterhorn",
-            "username": "jbetterhorn",
-            "password": "pass1234",
-            "id":"2"
-        },
-        {
-            "firstName": "Sara",
-            "lastName": "Withanaech",
-            "username": "swithanaech",
-            "password": "pass1234",
-            "id":"3"
-        },
-        {
-            "firstName": "Charles",
-            "lastName": "Fielder",
-            "username": "cfielder",
-            "password": "pass1234",
-            "id":"4"
-        },
-        {
-            "firstName": "Mason",
-            "lastName": "Downbad",
-            "username": "mdownbad",
-            "password": "pass1234",
-            "id":"5"
-        },
-        {
-            "firstName": "Corey",
-            "lastName": "En-Leuis",
-            "username": "cenleuis",
-            "password": "pass1234",
-            "id":"6"
-        },
-        {
-            "firstName": "Donny",
-            "lastName": "Thedon",
-            "username": "dthedon",
-            "password": "pass1234",
-            "id":"7"
-        }
-    ],
-    "groupComs": [
-        {
-            "id": "43",
-            "nickname": null
-        },
-        {
-            "id": "12",
-            "name": "Better Family"
-        },
-        {
-            "id": "564",
-            "name": "The Boys"
-        }
-    ],
-    "messages": [
-        {
-            "id": "1",
-            "groupComId": "564",
-            "senderId": "4",
-            "data": "Hello there..."
-        },
-        {
-            "id": "2",
-            "groupComId": "564",
-            "senderId": "6",
-            "data": "and I'm so sorry"
-        },
-        {
-            "id": "3",
-            "groupComId": "56",
-            "senderId": "6",
-            "data": "I cannot sleep. I cannot dream tonight."
-        }
-    ]
+  "$schema": "./node_modules/json-server/schema.json",
+  "users": [
+    {
+      "firstName": "David",
+      "lastName": "Betterhorn",
+      "username": "dbetterhorn",
+      "password": "pass1234",
+      "id": "1"
+    },
+    {
+      "firstName": "Juliette",
+      "lastName": "Betterhorn",
+      "username": "jbetterhorn",
+      "password": "pass1234",
+      "id": "2"
+    },
+    {
+      "firstName": "Sara",
+      "lastName": "Withanaech",
+      "username": "swithanaech",
+      "password": "pass1234",
+      "id": "3"
+    },
+    {
+      "firstName": "Charles",
+      "lastName": "Fielder",
+      "username": "cfielder",
+      "password": "pass1234",
+      "id": "4"
+    },
+    {
+      "firstName": "Mason",
+      "lastName": "Downbad",
+      "username": "mdownbad",
+      "password": "pass1234",
+      "id": "5"
+    },
+    {
+      "firstName": "Corey",
+      "lastName": "En-Leuis",
+      "username": "cenleuis",
+      "password": "pass1234",
+      "id": "6"
+    },
+    {
+      "firstName": "Donny",
+      "lastName": "Thedon",
+      "username": "dthedon",
+      "password": "pass1234",
+      "id": "7"
+    }
+  ],
+  "groupComs": [
+    {
+      "id": "43",
+      "nickname": null
+    },
+    {
+      "id": "12",
+      "name": "Better Family"
+    },
+    {
+      "id": "564",
+      "name": "The Boys"
+    }
+  ],
+  "conversations": [
+    {
+      "id": "564",
+      "groupNickname": "The Emo Boys",
+      "messages": []
+    },
+    {
+      "id": "56",
+      "groupNickname": null,
+      "messages": []
+    }
+  ],
+  "messages": [
+    {
+      "id": "1",
+      "convoId": "564",
+      "senderId": "5",
+      "timestamp": null,
+      "data": "Hello there..."
+    },
+    {
+      "id": "2",
+      "convoId": "564",
+      "senderId": "6",
+      "timestamp": null,
+      "data": "and I'm so sorry"
+    },
+    {
+      "id": "3",
+      "convoId": "564",
+      "senderId": "4",
+      "timestamp": null,
+      "data": "Nothing beats a Jet2 holiday!"
+    },
+    {
+      "id": "4",
+      "convoId": "56",
+      "senderId": "5",
+      "timestamp": null,
+      "data": "I cannot sleep. I cannot dream tonight."
+    },
+    {
+      "id": "6",
+      "convoId": "564",
+      "senderId": "5",
+      "timestamp": null,
+      "data": "Look at my new message!"
+    },
+    {
+      "timestamp": null,
+      "id": "B2E419F0-55DC-4452-AA61-46D021C43303",
+      "convoId": "564",
+      "senderId": "4",
+      "data": "I have THE PRETTIEST wife!"
+    },
+    {
+      "senderId": "4",
+      "id": "62D96C2F-8BC1-4043-BE50-2BA84122BFDB",
+      "convoId": "564",
+      "data": "… AM I WRONG?!?!?!",
+      "timestamp": "2026-02-21T19:47:15.853-1000"
+    },
+    {
+      "id": "774F80BF-AC01-4B37-8389-39CE829C10A6",
+      "data": "That’s what I thought! Ain’t no denying my kick-ass awesome wife!",
+      "senderId": "4",
+      "timestamp": "2026-02-21T19:48:58.286-1000",
+      "convoId": "564"
+    },
+    {
+      "convoId": "564",
+      "timestamp": "2026-02-24T09:00:47.911-1000",
+      "data": "Hello world!",
+      "senderId": "4",
+      "id": "F36F9F7A-B767-4F95-B840-A799A3824F7C"
+    }
+  ]
 }

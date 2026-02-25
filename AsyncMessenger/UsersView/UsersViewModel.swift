@@ -10,6 +10,7 @@ import SwiftUI
 
 class UsersViewModel: ObservableObject {
   private var cancellables = Set<AnyCancellable>()
+  @AppStorage("users") var savedUsers: Users?
   @Published var isLoading: Bool = false
   @Published var users: [User] = []
   @Published var alert: AlertMessage? = nil
@@ -38,6 +39,7 @@ class UsersViewModel: ObservableObject {
         }
       } receiveValue: { [weak self] (users) in
         print("Setting fetched users")
+        self?.savedUsers = Users(users)
         self?.users = users
       }
       .store(in: &cancellables)
